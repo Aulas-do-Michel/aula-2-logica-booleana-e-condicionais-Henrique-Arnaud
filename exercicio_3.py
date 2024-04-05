@@ -55,3 +55,31 @@ Resposta:
 Não
 
 """
+
+
+def isBRCA1(cromossomo, posicao, genoma):
+    if (cromossomo == "chr17"):
+        return validacaoGenomaPosicao(posicao, genoma)
+    return False
+
+
+def validacaoGenomaPosicao(posicao, genoma):
+    if (posicao > 41196312 and posicao < 41277500 and genoma == "hg19"):
+        return True
+    if (posicao > 43044295 and posicao < 43125483 and genoma == "hg38"):
+        return True
+    return False
+
+
+def main():
+    cromossomo = (input("Digite o cromossomo: "))
+    posicao = int(input("Digite a posição: "))
+    genoma = (input("Digite o genoma de referência: "))
+    if (isBRCA1(cromossomo, posicao, genoma)):
+        print("Sim")
+    else:
+        print("Não")
+
+
+if __name__ == "__main__":
+    main()
