@@ -17,3 +17,16 @@ Digite um número:
 
 Dica: Lembre do comando de resto da divisão inteira!
 """
+
+
+def main():
+    numero = int(input("Digite um número:\n"))
+    print("\n")
+    if numero % 2 == 0:
+        print('Par')
+    else:
+        print('Ímpar')
+
+
+if __name__ == "__main__":
+    main()
