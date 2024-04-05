@@ -40,10 +40,10 @@ Sim
 
 
 def main():
-    cromossomo = int(input("Digite o cromossomo: "))
-    posicao = input("Digite a posição: ")
+    cromossomo = (input("Digite o cromossomo: "))
+    posicao = int(input("Digite a posição: "))
 
-    if (cromossomo > 41196312 and cromossomo < 41277500 and posicao == "chr17"):
+    if (posicao > 41196312 and posicao < 41277500 and cromossomo == "chr17"):
         print("Sim")
     else:
         print("Não")
