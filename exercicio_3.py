@@ -64,9 +64,9 @@ def isBRCA1(cromossomo, posicao, genoma):
 
 
 def validacaoGenomaPosicao(posicao, genoma):
-    if (posicao > 41196312 and posicao < 41277500 and genoma == "hg19"):
+    if (posicao >= 41196312 and posicao <= 41277500 and genoma == "hg19"):
         return True
-    if (posicao > 43044295 and posicao < 43125483 and genoma == "hg38"):
+    if (posicao >= 43044295 and posicao <= 43125483 and genoma == "hg38"):
         return True
     return False
 
