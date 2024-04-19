@@ -43,7 +43,7 @@ def main():
     cromossomo = (input("Digite o cromossomo: "))
     posicao = int(input("Digite a posição: "))
 
-    if (posicao > 41196312 and posicao < 41277500 and cromossomo == "chr17"):
+    if (posicao >= 41196312 and posicao <= 41277500 and cromossomo == "chr17"):
         print("Sim")
     else:
         print("Não")
